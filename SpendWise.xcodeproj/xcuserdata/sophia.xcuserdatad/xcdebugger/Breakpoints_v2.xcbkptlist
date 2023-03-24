@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "36B687A3-735D-413B-AF7F-DD6295E2B10B"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "719D405E-264C-4ACB-8D1E-2985900A60F2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpendWise/Classes/TransactionData.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "TransactionData"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "719D405E-264C-4ACB-8D1E-2985900A60F2 - 78e761852a4d0513"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SpendWise.TransactionData.type.getter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "SpendWise"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sophia/Desktop/SpendWise/SpendWise/Classes/TransactionData.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "719D405E-264C-4ACB-8D1E-2985900A60F2 - be35cc817462d5e7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SpendWise.TransactionData.type.setter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "SpendWise"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sophia/Desktop/SpendWise/SpendWise/Classes/TransactionData.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "719D405E-264C-4ACB-8D1E-2985900A60F2 - b3e7bf95e7d0e2e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SpendWise.TransactionData.type.modify : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "SpendWise"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sophia/Desktop/SpendWise/SpendWise/Classes/TransactionData.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "719D405E-264C-4ACB-8D1E-2985900A60F2 - cda99959dac5df88"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SpendWise.TransactionData.type.modify : Swift.Optional&lt;Swift.String&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "SpendWise"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sophia/Desktop/SpendWise/SpendWise/Classes/TransactionData.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "719D405E-264C-4ACB-8D1E-2985900A60F2 - 741c6c7b78e2d69c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SpendWise.TransactionData.init() -&gt; SpendWise.TransactionData"
+                  moduleName = "SpendWise"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sophia/Desktop/SpendWise/SpendWise/Classes/TransactionData.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "220">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
