@@ -48,21 +48,3 @@ class AddViewController: UIViewController, UICollectionViewDelegate, UICollectio
 
 }
 
-//extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-//
-//    func numberOfSections(in collectionView: UICollectionView) -> Int {
-//        return 1
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return categoryLabel.count
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = categoryCollectionView.dequeueReusableCell(withReuseIdentifier: "categoryCell", for: indexPath) as! CollectionViewCell
-//        cell.CategoryImageView.image = UIImage(named: categoryIcon[indexPath.row])
-//        cell.CategoryNameLabel.text = CategoryNameLabel[indexPath.row]
-//
-//        return cell
-//    }
-//}

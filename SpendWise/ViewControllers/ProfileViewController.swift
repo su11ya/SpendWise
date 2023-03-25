@@ -2,7 +2,7 @@
 //  ProfileViewController.swift
 //  SpendWise
 //
-//  Created by ya su on 2023-03-24.
+//  
 //
 
 import UIKit
