@@ -18,6 +18,8 @@
 		EC1BAD1B29CDF2FD00358984 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1BAD1A29CDF2FD00358984 /* AddViewController.swift */; };
 		EC1BAD1E29CDF31300358984 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1BAD1D29CDF31300358984 /* ProfileViewController.swift */; };
 		EC1BAD2029CDF76B00358984 /* TransactionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1BAD1F29CDF76B00358984 /* TransactionData.swift */; };
+		EC1BAD2229CE48F500358984 /* 54a44053eab293e65fd65f4024732507.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC1BAD2129CE48F500358984 /* 54a44053eab293e65fd65f4024732507.jpg */; };
+		EC1BAD2629CE502900358984 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1BAD2529CE502900358984 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		EC1BAD1A29CDF2FD00358984 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		EC1BAD1D29CDF31300358984 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EC1BAD1F29CDF76B00358984 /* TransactionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionData.swift; sourceTree = "<group>"; };
+		EC1BAD2129CE48F500358984 /* 54a44053eab293e65fd65f4024732507.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 54a44053eab293e65fd65f4024732507.jpg; path = ../../../../Downloads/54a44053eab293e65fd65f4024732507.jpg; sourceTree = "<group>"; };
+		EC1BAD2529CE502900358984 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 			children = (
 				EC1BACFA29CDEF5200358984 /* AppDelegate.swift */,
 				EC1BAD1F29CDF76B00358984 /* TransactionData.swift */,
+				EC1BAD2529CE502900358984 /* CollectionViewCell.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -112,6 +117,7 @@
 		EC1BAD1129CDEF7900358984 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				EC1BAD2129CE48F500358984 /* 54a44053eab293e65fd65f4024732507.jpg */,
 				EC1BAD0329CDEF5300358984 /* Assets.xcassets */,
 			);
 			path = Images;
@@ -193,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC1BAD1429CDEFC500358984 /* SpendWiseData.db in Resources */,
+				EC1BAD2229CE48F500358984 /* 54a44053eab293e65fd65f4024732507.jpg in Resources */,
 				EC1BAD0729CDEF5300358984 /* LaunchScreen.storyboard in Resources */,
 				EC1BAD0429CDEF5300358984 /* Assets.xcassets in Resources */,
 				EC1BAD0229CDEF5200358984 /* Main.storyboard in Resources */,
@@ -208,6 +215,7 @@
 			files = (
 				EC1BAD1E29CDF31300358984 /* ProfileViewController.swift in Sources */,
 				EC1BAD1B29CDF2FD00358984 /* AddViewController.swift in Sources */,
+				EC1BAD2629CE502900358984 /* CollectionViewCell.swift in Sources */,
 				EC1BACFF29CDEF5200358984 /* ViewController.swift in Sources */,
 				EC1BAD1929CDF2D100358984 /* GraphViewController.swift in Sources */,
 				EC1BAD2029CDF76B00358984 /* TransactionData.swift in Sources */,

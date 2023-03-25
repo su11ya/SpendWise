@@ -7,29 +7,62 @@
 
 import UIKit
 
-class AddViewController: UIViewController {
+class AddViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+ 
+    let categoryLabel: [String] = ["Cloth", "Groceries", "Gas", "Gym", "Restaurant", "Vacation", "Rent", "Transport", "Gift", "Phone", "Entertainment"]
+    
+    
+    let categoryIcon = ["cloth", "groceries", "gas-station", "gym", "restaurant", "vacations", "rent", "transport", "gift", "phone", "entertainment"]
+    
+    
+    @IBOutlet weak var categoryCollectionView: UICollectionView!
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
 
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return categoryLabel.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = categoryCollectionView.dequeueReusableCell(withReuseIdentifier: "categoryCell", for: indexPath) as! CollectionViewCell
+        cell.CategoryImageView.image = UIImage(named: categoryIcon[indexPath.row])
+        cell.CategoryNameLabel.text = categoryLabel[indexPath.row]
+        
+        return cell
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         view.backgroundColor = .white
         
-        
-        
-        
+        categoryCollectionView.delegate = self
+        categoryCollectionView.dataSource = self
+  
     }
-   
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
+
+//extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+//
+//    func numberOfSections(in collectionView: UICollectionView) -> Int {
+//        return 1
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        return categoryLabel.count
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        let cell = categoryCollectionView.dequeueReusableCell(withReuseIdentifier: "categoryCell", for: indexPath) as! CollectionViewCell
+//        cell.CategoryImageView.image = UIImage(named: categoryIcon[indexPath.row])
+//        cell.CategoryNameLabel.text = CategoryNameLabel[indexPath.row]
+//
+//        return cell
+//    }
+//}
