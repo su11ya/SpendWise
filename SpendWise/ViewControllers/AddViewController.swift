@@ -12,7 +12,7 @@ class AddViewController: UIViewController, UICollectionViewDelegate, UICollectio
     let categoryLabel: [String] = ["Cloth", "Groceries", "Gas", "Gym", "Restaurant", "Vacation", "Rent", "Transport", "Gift", "Phone", "Entertainment"]
     
     
-    let categoryIcon = ["cloth", "groceries", "gas-station", "gym", "restaurant", "vacations", "rent", "transport", "gift", "phone", "entertainment"]
+    let categoryIcon = ["cloth", "groceries", "gas", "gym", "restaurant", "vacation", "rent", "transport", "gift", "phone", "entertainment"]
     
     
     @IBOutlet weak var categoryCollectionView: UICollectionView!
