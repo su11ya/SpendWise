@@ -87,13 +87,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="54a44053eab293e65fd65f4024732507.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hSY-wB-Gzi">
-                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P34-jB-4T3">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P34-jB-4T3">
                                 <rect key="frame" x="0.0" y="529" width="393" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipa-rm-zUM">
                                         <rect key="frame" x="8" y="8" width="108" height="48"/>
@@ -114,31 +109,34 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rmy-rO-rWe">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rmy-rO-rWe">
                                 <rect key="frame" x="0.0" y="103" width="393" height="426"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="10" id="3tQ-uX-FLj">
-                                    <size key="itemSize" width="100" height="100"/>
-                                    <size key="estimatedItemSize" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="393" id="5Ct-lq-ebu"/>
+                                    <constraint firstAttribute="height" constant="426" id="hpp-qq-bkw"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3tQ-uX-FLj">
+                                    <size key="itemSize" width="80" height="87"/>
+                                    <size key="estimatedItemSize" width="80" height="87"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                    <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="5"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoryCell" id="xZq-oo-kVf" customClass="CollectionViewCell" customModule="SpendWise" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="10" width="100" height="120"/>
+                                        <rect key="frame" x="5" y="5" width="80" height="87"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Hma-OA-fPN">
-                                            <rect key="frame" x="0.0" y="0.0" width="100" height="120"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="87"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloth" translatesAutoresizingMaskIntoConstraints="NO" id="OVR-8V-zjw">
-                                                    <rect key="frame" x="8" y="8" width="84" height="73"/>
+                                                    <rect key="frame" x="15" y="8" width="50" height="50"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Obl-Se-ehx">
-                                                    <rect key="frame" x="5" y="89" width="87" height="31"/>
+                                                    <rect key="frame" x="-1" y="66" width="82" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -146,7 +144,7 @@
                                                 </label>
                                             </subviews>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="100" height="120"/>
+                                        <size key="customSize" width="80" height="87"/>
                                         <connections>
                                             <outlet property="CategoryImageView" destination="OVR-8V-zjw" id="hMT-AI-pmo"/>
                                             <outlet property="CategoryNameLabel" destination="Obl-Se-ehx" id="Awp-nX-Tsp"/>
@@ -157,6 +155,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="09O-GT-fax"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rmy-rO-rWe" firstAttribute="centerX" secondItem="Hai-E2-GZv" secondAttribute="centerX" id="30v-ng-6ej"/>
+                            <constraint firstItem="P34-jB-4T3" firstAttribute="top" secondItem="rmy-rO-rWe" secondAttribute="bottom" id="JEH-8E-0SV"/>
+                            <constraint firstItem="rmy-rO-rWe" firstAttribute="top" secondItem="09O-GT-fax" secondAttribute="top" id="LF1-fS-jx1"/>
+                            <constraint firstItem="rmy-rO-rWe" firstAttribute="trailing" secondItem="P34-jB-4T3" secondAttribute="trailing" id="Rr5-Rk-FQY"/>
+                            <constraint firstItem="09O-GT-fax" firstAttribute="bottom" secondItem="P34-jB-4T3" secondAttribute="bottom" constant="176" id="fMq-4M-Idz"/>
+                            <constraint firstItem="rmy-rO-rWe" firstAttribute="leading" secondItem="P34-jB-4T3" secondAttribute="leading" id="lg6-vq-LGn"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add" id="fNL-S5-BSB">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="3pB-0m-nXm">
@@ -242,7 +248,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="54a44053eab293e65fd65f4024732507.jpg" width="600" height="1300"/>
         <image name="Add" width="30" height="30"/>
         <image name="Graph" width="30" height="30"/>
         <image name="cloth" width="30" height="30"/>
