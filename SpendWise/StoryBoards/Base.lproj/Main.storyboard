@@ -91,9 +91,9 @@
                                 <rect key="frame" x="0.0" y="482" width="393" height="64"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipa-rm-zUM">
-                                        <rect key="frame" x="8" y="8" width="108" height="48"/>
+                                        <rect key="frame" x="8" y="8" width="153" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -153,47 +153,7 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qse-vd-Y9S">
-                                <rect key="frame" x="30" y="581" width="75" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="7">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </backgroundConfiguration>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Tf-pH-oT6">
-                                <rect key="frame" x="113" y="581" width="75" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="8">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </backgroundConfiguration>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQe-rm-j1h">
-                                <rect key="frame" x="302" y="581" width="75" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <backgroundConfiguration key="background" image="calendar" imageContentMode="center">
-                                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </backgroundConfiguration>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YpS-3V-ArX">
-                                <rect key="frame" x="196" y="581" width="75" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="9">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </backgroundConfiguration>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lv-Sn-A9n">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lv-Sn-A9n">
                                 <rect key="frame" x="30" y="648" width="75" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -202,8 +162,12 @@
                                         <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="fourPressed:" destination="hId-Ea-fzm" eventType="touchUpInside" id="tdC-Gv-0tG"/>
+                                    <action selector="numberPressed:" destination="hId-Ea-fzm" eventType="touchUpInside" id="orU-UZ-Cts"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eE-rQ-EI3">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eE-rQ-EI3">
                                 <rect key="frame" x="113" y="648" width="75" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -212,6 +176,10 @@
                                         <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="fivePressed:" destination="hId-Ea-fzm" eventType="touchUpInside" id="rwt-er-8dL"/>
+                                    <action selector="numberPressed:" destination="hId-Ea-fzm" eventType="touchUpInside" id="xsW-oh-8bZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUC-hH-3cK">
                                 <rect key="frame" x="302" y="648" width="75" height="50"/>
@@ -223,7 +191,7 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gom-lg-y8E">
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gom-lg-y8E">
                                 <rect key="frame" x="196" y="648" width="75" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -232,8 +200,12 @@
                                         <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="numberPressed:" destination="hId-Ea-fzm" eventType="touchUpInside" id="3MB-zf-2Dq"/>
+                                    <action selector="sixPressed:" destination="hId-Ea-fzm" eventType="touchUpInside" id="jxI-uM-Brt"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOq-a1-OwC">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOq-a1-OwC">
                                 <rect key="frame" x="30" y="706" width="75" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -242,8 +214,12 @@
                                         <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="numberPressed:" destination="hId-Ea-fzm" eventType="touchUpInside" id="coI-X4-s5p"/>
+                                    <action selector="onePressed:" destination="hId-Ea-fzm" eventType="touchUpInside" id="J50-1k-FDB"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Na-Qk-Bbk">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Na-Qk-Bbk">
                                 <rect key="frame" x="113" y="706" width="75" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -252,6 +228,10 @@
                                         <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="numberPressed:" destination="hId-Ea-fzm" eventType="touchUpInside" id="Yoz-yX-hjV"/>
+                                    <action selector="twoPressed:" destination="hId-Ea-fzm" eventType="touchUpInside" id="I34-7P-Q2o"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uzx-PE-TSN">
                                 <rect key="frame" x="302" y="706" width="75" height="50"/>
@@ -263,7 +243,7 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddb-ae-4i7">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddb-ae-4i7">
                                 <rect key="frame" x="196" y="706" width="75" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -272,8 +252,12 @@
                                         <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="numberPressed:" destination="hId-Ea-fzm" eventType="touchUpInside" id="fJD-3q-ueE"/>
+                                    <action selector="threePressed:" destination="hId-Ea-fzm" eventType="touchUpInside" id="0Ra-Md-bln"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMA-bI-mIu">
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMA-bI-mIu">
                                 <rect key="frame" x="30" y="764" width="75" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -282,6 +266,9 @@
                                         <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="numberPressed:" destination="hId-Ea-fzm" eventType="touchUpInside" id="FXt-uf-VcT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4UT-xT-26G">
                                 <rect key="frame" x="113" y="764" width="75" height="50"/>
@@ -292,8 +279,11 @@
                                         <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="numberPressed:" destination="hId-Ea-fzm" eventType="touchUpInside" id="y1f-ex-o0d"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGq-1L-AuR">
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGq-1L-AuR">
                                 <rect key="frame" x="302" y="764" width="75" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -302,8 +292,11 @@
                                         <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="okPressed:" destination="hId-Ea-fzm" eventType="touchUpInside" id="AW5-80-Yoj"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eje-Fd-JG3">
+                            <button opaque="NO" tag="-1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eje-Fd-JG3">
                                 <rect key="frame" x="196" y="764" width="75" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -312,6 +305,61 @@
                                         <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="numberPressed:" destination="hId-Ea-fzm" eventType="touchUpInside" id="6Q1-xP-dUU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qse-vd-Y9S">
+                                <rect key="frame" x="30" y="590" width="75" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="7">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="numberPressed:" destination="hId-Ea-fzm" eventType="touchUpInside" id="s13-QY-vdN"/>
+                                    <action selector="sevenPressed:" destination="hId-Ea-fzm" eventType="touchUpInside" id="X2W-wy-bVf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Tf-pH-oT6">
+                                <rect key="frame" x="113" y="590" width="75" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="8">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="eightPressed:" destination="hId-Ea-fzm" eventType="touchUpInside" id="izm-A9-5l0"/>
+                                    <action selector="numberPressed:" destination="hId-Ea-fzm" eventType="touchUpInside" id="2cn-6M-SV4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQe-rm-j1h">
+                                <rect key="frame" x="302" y="590" width="75" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="calendar" imageContentMode="center">
+                                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YpS-3V-ArX">
+                                <rect key="frame" x="196" y="590" width="75" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="9">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ninePressed:" destination="hId-Ea-fzm" eventType="touchUpInside" id="lje-fI-Std"/>
+                                    <action selector="numberPressed:" destination="hId-Ea-fzm" eventType="touchUpInside" id="57E-UX-kll"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="09O-GT-fax"/>
@@ -333,6 +381,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="amountLabel" destination="ipa-rm-zUM" id="h3n-lX-ZSZ"/>
                         <outlet property="categoryCollectionView" destination="rmy-rO-rWe" id="bKM-4c-KVf"/>
                     </connections>
                 </viewController>
