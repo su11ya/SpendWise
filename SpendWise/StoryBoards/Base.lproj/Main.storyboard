@@ -105,6 +105,9 @@
                                             <segment title="Income"/>
                                         </segments>
                                         <color key="selectedSegmentTintColor" red="0.91976243260000001" green="0.77183648999999999" blue="0.1759562315" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <action selector="segmentDidChangeWithSender:" destination="hId-Ea-fzm" eventType="valueChanged" id="DSu-lo-uof"/>
+                                        </connections>
                                     </segmentedControl>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -397,6 +400,7 @@
                         <outlet property="categoryCollectionView" destination="rmy-rO-rWe" id="bKM-4c-KVf"/>
                         <outlet property="datePicker" destination="cbe-Nr-KHQ" id="KBN-jS-aav"/>
                         <outlet property="lbAmount" destination="ipa-rm-zUM" id="Uni-hn-ZZP"/>
+                        <outlet property="sgType" destination="kOO-2i-cCQ" id="hgV-Zy-VAg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fA6-gl-s8n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

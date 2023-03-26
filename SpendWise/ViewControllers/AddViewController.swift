@@ -8,27 +8,83 @@
 import UIKit
 
 class AddViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
- 
-    let categoryLabel: [String] = ["Cloth", "Groceries", "Gas", "Gym", "Restaurant", "Vacation", "Rent", "Transport", "Gift", "Phone", "Entertainment"]
+    
+   
+//    let categoryLabel: [String] = ["Cloth", "Groceries", "Gas", "Gym", "Restaurant", "Vacation", "Rent", "Transport", "Gift", "Phone", "Entertainment"]
     
     
-    let categoryIcon = ["cloth", "groceries", "gas", "gym", "restaurant", "vacation", "rent", "transport", "gift", "phone", "entertainment"]
+//    let categoryIcon = ["cloth", "groceries", "gas", "gym", "restaurant", "vacation", "rent", "transport", "gift", "phone", "entertainment"]
 
 
+    let incomeCategotyLabel: [String] = ["Salary", "Bonus", "Gift", "Finance", "Stock"]
+    
+    let incomeCategoryIcon = ["salary", "bonus", "gift", "finance", "stock"]
     
     
     @IBOutlet var lbAmount : UILabel!
+    @IBOutlet var sgType : UISegmentedControl!
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var amountLabel: UILabel!
     
     var selectedCategory : String = "Cloth"
     var selectedDateOfBirth : String = ""
     var amount: Double = 0.0
+    var categoryLabel : [String] = []
+    var categoryIcon = ["cloth", "groceries", "gas", "gym", "restaurant", "vacation", "rent", "transport", "gift", "phone", "entertainment"]
+    var typeResult = "Expense"
     
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var navigationBar: UINavigationBar!
     
     let dateFormatter = DateFormatter()
+
+//    func updateType(){
+//        let type = sgType.selectedSegmentIndex
+//
+//        if type == 0 {
+//
+//            categoryLabel = ["Cloth", "Groceries", "Gas", "Gym", "Restaurant", "Vacation", "Rent", "Transport", "Gift", "Phone", "Entertainment"]
+//            categoryIcon = ["cloth", "groceries", "gas", "gym", "restaurant", "vacation", "rent", "transport", "gift", "phone", "entertainment"]
+//
+//        } else if type == 1 {
+//
+//        categoryLabel = ["Salary", "Bonus", "Gift", "Finance", "Stock"]
+//        categoryIcon = ["salary", "bonus", "gift", "finance", "stock"]
+//
+//        }
+//
+//
+//        categoryCollectionView.reloadData()
+//        selectedCategory = categoryLabel[0]
+//
+//    }
+    func updateType(){
+        let type = sgType.selectedSegmentIndex
+        
+        if type == 0 {
+            
+            categoryLabel = ["Cloth", "Groceries", "Gas", "Gym", "Restaurant", "Vacation", "Rent", "Transport", "Gift", "Phone", "Entertainment"]
+            categoryIcon = ["cloth", "groceries", "gas", "gym", "restaurant", "vacation", "rent", "transport", "gift", "phone", "entertainment"]
+            typeResult = "Expense"
+            print("segment expense")
+            
+        } else{
+            
+            categoryLabel = ["Salary", "Bonus", "Gift", "Finance", "Stock"]
+            categoryIcon = ["salary", "bonus", "gift", "finance", "stock"]
+            typeResult = "Income"
+            print("segement income")
+        }
+        
+        categoryCollectionView.reloadData()
+        selectedCategory = categoryLabel[0]
+    }
+    
+
+    
+    
+
+    
 
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -57,7 +113,7 @@ class AddViewController: UIViewController, UICollectionViewDelegate, UICollectio
     
     @IBAction func addTransaction(sender : Any){
         let transaction : TransactionData = TransactionData.init()
-        transaction.initWithData(theRow: 0, theDate: selectedDateOfBirth, theCategory: selectedCategory, theAmount: lbAmount.text!, theType: "Expense", theDescriptions: "N/A", theBalance: "0")
+        transaction.initWithData(theRow: 0, theDate: selectedDateOfBirth, theCategory: selectedCategory, theAmount: lbAmount.text!, theType: typeResult, theDescriptions: "N/A", theBalance: "0")
         
         let returnCode = mainDelegate.insertIntoDatabase(transcation: transaction)
         
@@ -74,24 +130,6 @@ class AddViewController: UIViewController, UICollectionViewDelegate, UICollectio
         
     }
     
-    
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        // Do any additional setup after loading the view.
-//        view.backgroundColor = .white
-//        //navigationBar.delegate = nil
-//
-//        categoryCollectionView.delegate = self
-//        categoryCollectionView.dataSource = self
-//
-//        // Create the date picker
-//        datePicker.datePickerMode = .date
-//        datePicker.addTarget(self, action: #selector(datePickerValueChanged(sender:)), for: .valueChanged)
-//        datePicker.isHidden = true // Hide the date picker initially
-//
-//        dateFormatter.dateFormat = "yyyy-MM-dd"
-//    }
     
     
     
@@ -137,32 +175,7 @@ class AddViewController: UIViewController, UICollectionViewDelegate, UICollectio
         selectedDateOfBirth = dateFormatter.string(from: selectedDate)
         
     }
-    
-//    @IBAction func calanderPressed(sender : UIButton){
-//        // Create the date picker
-//            let datePicker = UIDatePicker()
-//            datePicker.datePickerMode = .date
-//            datePicker.addTarget(self, action: #selector(datePickerValueChanged(sender:)), for: .valueChanged)
-//
-//            // Create the alert controller
-//            let alertController = UIAlertController(title: "Select Date", message: nil, preferredStyle: .actionSheet)
-//            alertController.view.addSubview(datePicker)
-//
-//            // Create the OK action
-//            let okAction = UIAlertAction(title: "OK", style: .default, handler: { _ in
-//                // Update the label with the selected date
-//                self.dateFormatter.dateFormat = "MMM dd, yyyy"
-//                self.selectedDateOfBirth = self.dateFormatter.string(from: datePicker.date)
-//            })
-//            alertController.addAction(okAction)
-//
-//            // Create the cancel action
-//            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-//            alertController.addAction(cancelAction)
-//
-//            // Present the alert controller
-//            present(alertController, animated: true, completion: nil)
-//    }
+
     
     @IBAction func onePressed(_ sender: UIButton) {
         print(sender.tag)
@@ -214,7 +227,12 @@ class AddViewController: UIViewController, UICollectionViewDelegate, UICollectio
         print(sender.tag)
     }
     
+    @IBAction func segmentDidChange(sender: UISegmentedControl){
+        updateType()
+    }
     
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -229,13 +247,15 @@ class AddViewController: UIViewController, UICollectionViewDelegate, UICollectio
         datePicker.datePickerMode = .date
         datePicker.addTarget(self, action: #selector(datePickerValueChanged(sender:)), for: .valueChanged)
         datePicker.isHidden = true // Hide the date picker initially
-  
+
         dateFormatter.dateFormat = "yyyy-MM-dd"
+        
+        updateType() // Add this line to update the collection view with expense categories by default
+        
     }
+
     
-    
-    
-    
+
     
 }
 
