@@ -64,11 +64,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     let type = String(cString: ctype!)
                     //let description = String(cString: cdescription!)
                     
-                    let description: String
+                    let descriptions: String
                     if let cdescription = cdescription {
-                        description = String(cString: cdescription)
+                        descriptions = String(cString: cdescription)
                     } else {
-                        description = ""
+                        descriptions = ""
                     }
                     let balance = String(cString: cbalance!)
                     
@@ -77,7 +77,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     transcation.append(transcationData)
                     
                     print("Query result: ")
-                    print("\(id) | \(date) | \(category) | \(amount) | \(type) | \(description) | \(balance)")
+                    print("\(id) | \(date) | \(category) | \(amount) | \(type) | \(descriptions) | \(balance)")
          
                 }//while ends
                 
@@ -115,7 +115,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let categoryStr = transcation.category! as NSString
                 let amountStr = transcation.amount! as NSString
                 let typeStr = transcation.type! as NSString
-                let descriptionStr = transcation.description as NSString
+                let descriptionStr = transcation.descriptions! as NSString
                 let balanceStr = transcation.balance! as NSString
                 
                 // 1 is column number; convert to C string; -1 means no limit on bytes

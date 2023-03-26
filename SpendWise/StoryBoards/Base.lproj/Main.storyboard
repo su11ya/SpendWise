@@ -293,6 +293,7 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="addTransactionWithSender:" destination="hId-Ea-fzm" eventType="touchUpInside" id="eiO-JB-POb"/>
                                     <action selector="okPressed:" destination="hId-Ea-fzm" eventType="touchUpInside" id="AW5-80-Yoj"/>
                                 </connections>
                             </button>
@@ -346,6 +347,9 @@
                                         <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="calanderPressed:" destination="hId-Ea-fzm" eventType="touchUpInside" id="Qbe-sS-Bun"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YpS-3V-ArX">
                                 <rect key="frame" x="196" y="590" width="75" height="50"/>
@@ -361,6 +365,12 @@
                                     <action selector="numberPressed:" destination="hId-Ea-fzm" eventType="touchUpInside" id="57E-UX-kll"/>
                                 </connections>
                             </button>
+                            <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="cbe-Nr-KHQ">
+                                <rect key="frame" x="0.0" y="554" width="393" height="34.333333333333371"/>
+                                <connections>
+                                    <action selector="datePickerValueChangedWithSender:" destination="hId-Ea-fzm" eventType="touchUpInside" id="xTI-SQ-qyM"/>
+                                </connections>
+                            </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="09O-GT-fax"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -371,6 +381,8 @@
                             <constraint firstItem="rmy-rO-rWe" firstAttribute="trailing" secondItem="P34-jB-4T3" secondAttribute="trailing" id="Rr5-Rk-FQY"/>
                             <constraint firstItem="09O-GT-fax" firstAttribute="bottom" secondItem="P34-jB-4T3" secondAttribute="bottom" constant="176" id="fMq-4M-Idz"/>
                             <constraint firstItem="rmy-rO-rWe" firstAttribute="leading" secondItem="P34-jB-4T3" secondAttribute="leading" id="lg6-vq-LGn"/>
+                            <constraint firstItem="cbe-Nr-KHQ" firstAttribute="top" secondItem="Hai-E2-GZv" secondAttribute="top" constant="554" id="qVL-64-9hV"/>
+                            <constraint firstItem="cbe-Nr-KHQ" firstAttribute="leading" secondItem="P34-jB-4T3" secondAttribute="leading" id="vEi-wh-xEg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add" id="fNL-S5-BSB">
@@ -383,6 +395,8 @@
                     <connections>
                         <outlet property="amountLabel" destination="ipa-rm-zUM" id="h3n-lX-ZSZ"/>
                         <outlet property="categoryCollectionView" destination="rmy-rO-rWe" id="bKM-4c-KVf"/>
+                        <outlet property="datePicker" destination="cbe-Nr-KHQ" id="KBN-jS-aav"/>
+                        <outlet property="lbAmount" destination="ipa-rm-zUM" id="Uni-hn-ZZP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fA6-gl-s8n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
