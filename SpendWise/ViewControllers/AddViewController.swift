@@ -20,7 +20,7 @@ class AddViewController: UIViewController, UICollectionViewDelegate, UICollectio
         var amount: Double = 0.0
     
     @IBOutlet weak var categoryCollectionView: UICollectionView!
-
+    @IBOutlet weak var navigationBar: UINavigationBar!
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -45,6 +45,7 @@ class AddViewController: UIViewController, UICollectionViewDelegate, UICollectio
 
         // Do any additional setup after loading the view.
         view.backgroundColor = .white
+        navigationBar.delegate = nil
         
         categoryCollectionView.delegate = self
         categoryCollectionView.dataSource = self
@@ -60,10 +61,7 @@ class AddViewController: UIViewController, UICollectionViewDelegate, UICollectio
                 // Delete button pressed
                 amount = 0
                 amountLabel.text = String(format: "$%.2f", amount)
-//                if amount != 0 {
-//                    amount = amount / 10
-//                    amountLabel.text = String(format: "$%.2f", amount)
-//                }
+
             case 0...9:
                 // Number button pressed
                 let digit = Double(tag)
