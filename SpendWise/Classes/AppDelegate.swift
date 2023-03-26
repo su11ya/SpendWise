@@ -97,6 +97,64 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }//readDataFromDatabase ends
     
+    func insertIntoDatabase(transcation : TransactionData) -> Bool {
+        
+        var db : OpaquePointer? = nil
+        var returnCode : Bool = true
+        
+        if sqlite3_open(self.databasePath, &db) == SQLITE_OK {
+            var insertStatement : OpaquePointer? = nil
+            // 7 placeholders
+            var insertStatementString : String = "insert into entries values(NULL, ?, ?, ?, ?, ?, ?)"
+            
+            // -1 means no limit character
+            if sqlite3_prepare(db, insertStatementString, -1, &insertStatement, nil) == SQLITE_OK {
+                
+                //convert string to NS string, then convert NS string to C string
+                let dateStr = transcation.date! as NSString
+                let categoryStr = transcation.category! as NSString
+                let amountStr = transcation.amount! as NSString
+                let typeStr = transcation.type! as NSString
+                let descriptionStr = transcation.description as NSString
+                let balanceStr = transcation.balance! as NSString
+                
+                // 1 is column number; convert to C string; -1 means no limit on bytes
+                sqlite3_bind_text(insertStatement, 1, dateStr.utf8String, -1, nil)
+                sqlite3_bind_text(insertStatement, 2, categoryStr.utf8String, -1, nil)
+                sqlite3_bind_text(insertStatement, 3, amountStr.utf8String, -1, nil)
+                sqlite3_bind_text(insertStatement, 4, typeStr.utf8String, -1, nil)
+                sqlite3_bind_text(insertStatement, 5, descriptionStr.utf8String, -1, nil)
+                sqlite3_bind_text(insertStatement, 6, balanceStr.utf8String, -1, nil)
+             
+                if sqlite3_step(insertStatement) == SQLITE_DONE {
+                    //retrieve newly inserted rown number
+                    let rowID = sqlite3_last_insert_rowid(db)
+                    print("Successfully inserted row \(rowID)")
+                }
+                else {
+                    print("Could not insert row")
+                    returnCode = false
+                }
+                // finish up memory allocations, flush data
+                sqlite3_finalize(insertStatement)
+            }
+            else{
+                print("Insert statement could not be prepared")
+                returnCode = false
+            }
+            
+            sqlite3_close(db)
+        }
+        else {
+            print("Unable to open database")
+            returnCode = false
+        }
+        
+        return returnCode
+    }
+    
+    
+    
     
     
     func checkAndCreatedDatabase(){
