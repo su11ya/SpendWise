@@ -32,32 +32,14 @@ class AddViewController: UIViewController, UICollectionViewDelegate, UICollectio
     var categoryLabel : [String] = []
     var categoryIcon = ["cloth", "groceries", "gas", "gym", "restaurant", "vacation", "rent", "transport", "gift", "phone", "entertainment"]
     var typeResult = "Expense"
+    var descriptionResult: String = "N/A"
     
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var navigationBar: UINavigationBar!
     
     let dateFormatter = DateFormatter()
 
-//    func updateType(){
-//        let type = sgType.selectedSegmentIndex
-//
-//        if type == 0 {
-//
-//            categoryLabel = ["Cloth", "Groceries", "Gas", "Gym", "Restaurant", "Vacation", "Rent", "Transport", "Gift", "Phone", "Entertainment"]
-//            categoryIcon = ["cloth", "groceries", "gas", "gym", "restaurant", "vacation", "rent", "transport", "gift", "phone", "entertainment"]
-//
-//        } else if type == 1 {
-//
-//        categoryLabel = ["Salary", "Bonus", "Gift", "Finance", "Stock"]
-//        categoryIcon = ["salary", "bonus", "gift", "finance", "stock"]
-//
-//        }
-//
-//
-//        categoryCollectionView.reloadData()
-//        selectedCategory = categoryLabel[0]
-//
-//    }
+
     func updateType(){
         let type = sgType.selectedSegmentIndex
         
@@ -113,7 +95,7 @@ class AddViewController: UIViewController, UICollectionViewDelegate, UICollectio
     
     @IBAction func addTransaction(sender : Any){
         let transaction : TransactionData = TransactionData.init()
-        transaction.initWithData(theRow: 0, theDate: selectedDateOfBirth, theCategory: selectedCategory, theAmount: lbAmount.text!, theType: typeResult, theDescriptions: "N/A", theBalance: "0")
+        transaction.initWithData(theRow: 0, theDate: selectedDateOfBirth, theCategory: selectedCategory, theAmount: lbAmount.text!, theType: typeResult, theDescriptions: descriptionResult, theBalance: "0")
         
         let returnCode = mainDelegate.insertIntoDatabase(transcation: transaction)
         
@@ -229,6 +211,27 @@ class AddViewController: UIViewController, UICollectionViewDelegate, UICollectio
     
     @IBAction func segmentDidChange(sender: UISegmentedControl){
         updateType()
+    }
+    
+    @IBAction func showNotesDialog(sender: UIButton) {
+        let alertController = UIAlertController(title: "Add a Note", message: nil, preferredStyle: .alert)
+
+        alertController.addTextField { (textField) in
+            textField.placeholder = "Enter your note here"
+        }
+
+        let saveAction = UIAlertAction(title: "Save", style: .default) { [weak self] (_) in
+            if let noteText = alertController.textFields?.first?.text {
+                // Save the note to a variable or storage mechanism in your view controller
+                self?.descriptionResult = noteText
+            }
+        }
+        alertController.addAction(saveAction)
+
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alertController.addAction(cancelAction)
+
+        present(alertController, animated: true, completion: nil)
     }
     
     
