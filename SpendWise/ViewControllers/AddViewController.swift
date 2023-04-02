@@ -45,8 +45,8 @@ class AddViewController: UIViewController, UICollectionViewDelegate, UICollectio
         
         if type == 0 {
             
-            categoryLabel = ["Cloth", "Groceries", "Gas", "Gym", "Restaurant", "Vacation", "Rent", "Transport", "Gift", "Phone", "Entertainment"]
-            categoryIcon = ["cloth", "groceries", "gas", "gym", "restaurant", "vacation", "rent", "transport", "gift", "phone", "entertainment"]
+            categoryLabel = ["Cloth", "Groceries", "Gas", "Gym", "Restaurant", "Vacation", "Rent", "Transport", "Gift", "Phone", "Entertainment", "Movie", "Game", "Taxi", "Book", "Drug", "Education", "Toy", "House"]
+            categoryIcon = ["cloth", "groceries", "gas", "gym", "restaurant", "vacation", "rent", "transport", "gift", "phone", "entertainment", "movie", "game", "taxi", "book", "drug", "education", "toy", "house"]
             typeResult = "Expense"
             print("segment expense")
             
