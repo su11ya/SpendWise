@@ -16,8 +16,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
             endingLineNumber = "16"
-            landmarkName = "amount"
-            landmarkType = "24">
+            landmarkName = "TransactionData"
+            landmarkType = "3">
             <Locations>
                <Location
                   uuid = "719D405E-264C-4ACB-8D1E-2985900A60F2 - 78e761852a4d0513"
