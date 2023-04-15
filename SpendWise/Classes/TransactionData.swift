@@ -7,8 +7,11 @@
 
 import UIKit
 
+// TransactionData class represents a single transaction, including its details such as
+// date, category, amount, type, description, and balance.
 class TransactionData: NSObject {
     
+    // Properties to store the transaction details
     var id : Int?
     var date : String?
     var category : String?
@@ -17,6 +20,7 @@ class TransactionData: NSObject {
     var descriptions : String?
     var balance : String?
     
+    // Method to initialize the TransactionData object with the provided details
     func initWithData(theRow i : Int, theDate d : String, theCategory c : String, theAmount a : String,
                      theType t : String, theDescriptions des : String, theBalance b : String){
         id = i
