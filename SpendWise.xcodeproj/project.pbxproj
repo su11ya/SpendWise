@@ -10,6 +10,7 @@
 		EC029D9F29EB59F600C14297 /* addSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC029D9E29EB59F600C14297 /* addSound.wav */; };
 		EC029DA129EB5A8C00C14297 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC029DA029EB5A8C00C14297 /* AVFoundation.framework */; };
 		EC029DA329EB5AA000C14297 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC029DA229EB5A9F00C14297 /* QuartzCore.framework */; };
+		EC029DA529EB61AF00C14297 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC029DA429EB61AF00C14297 /* EditViewController.swift */; };
 		EC1BACFB29CDEF5200358984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1BACFA29CDEF5200358984 /* AppDelegate.swift */; };
 		EC1BACFD29CDEF5200358984 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1BACFC29CDEF5200358984 /* SceneDelegate.swift */; };
 		EC1BACFF29CDEF5200358984 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1BACFE29CDEF5200358984 /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 		EC029D9E29EB59F600C14297 /* addSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = addSound.wav; path = ../../../../Downloads/addSound.wav; sourceTree = "<group>"; };
 		EC029DA029EB5A8C00C14297 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		EC029DA229EB5A9F00C14297 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EC029DA429EB61AF00C14297 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		EC1BACF729CDEF5200358984 /* SpendWise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpendWise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC1BACFA29CDEF5200358984 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC1BACFC29CDEF5200358984 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				EC1BAD1829CDF2D100358984 /* GraphViewController.swift */,
 				EC1BAD1A29CDF2FD00358984 /* AddViewController.swift */,
 				EC1BAD1D29CDF31300358984 /* ProfileViewController.swift */,
+				EC029DA429EB61AF00C14297 /* EditViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				EC1BAD2029CDF76B00358984 /* TransactionData.swift in Sources */,
 				EC1BACFB29CDEF5200358984 /* AppDelegate.swift in Sources */,
 				EC1BACFD29CDEF5200358984 /* SceneDelegate.swift in Sources */,
+				EC029DA529EB61AF00C14297 /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -40,6 +40,8 @@ class AddViewController: UIViewController, UICollectionViewDelegate, UICollectio
     
     let dateFormatter = DateFormatter()
     var soundPlayer : AVAudioPlayer?
+    var selectedIndex: IndexPath? = nil
+
 
     func updateType(){
         let type = sgType.selectedSegmentIndex
@@ -83,12 +85,25 @@ class AddViewController: UIViewController, UICollectionViewDelegate, UICollectio
         cell.CategoryImageView.image = UIImage(named: categoryIcon[indexPath.row])
         cell.CategoryNameLabel.text = categoryLabel[indexPath.row]
         
+        if selectedIndex == indexPath {
+                // Change the cell border or background color to highlight it
+                cell.layer.borderColor = UIColor.systemYellow.cgColor
+                cell.layer.borderWidth = 2.0
+            } else {
+                // Reset the cell border or background color
+                cell.layer.borderColor = UIColor.clear.cgColor
+                cell.layer.borderWidth = 0.0
+            }
+        
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        selectedIndex = indexPath
         selectedCategory = categoryLabel[indexPath.row]
         print(selectedCategory)
+        collectionView.reloadData()
     }
 
     
