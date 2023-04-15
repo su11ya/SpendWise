@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CE9C751329EA3BA500465B9E /* SpendWiseData.db in Resources */ = {isa = PBXBuildFile; fileRef = CE9C751229EA3BA500465B9E /* SpendWiseData.db */; };
 		CE9C751529EA3BB100465B9E /* 54a44053eab293e65fd65f4024732507.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE9C751429EA3BB100465B9E /* 54a44053eab293e65fd65f4024732507.jpg */; };
+		CE9C751729EA483100465B9E /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9C751629EA483100465B9E /* GuideViewController.swift */; };
 		EC1BACFB29CDEF5200358984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1BACFA29CDEF5200358984 /* AppDelegate.swift */; };
 		EC1BACFD29CDEF5200358984 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1BACFC29CDEF5200358984 /* SceneDelegate.swift */; };
 		EC1BACFF29CDEF5200358984 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1BACFE29CDEF5200358984 /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		CE9C751229EA3BA500465B9E /* SpendWiseData.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpendWiseData.db; sourceTree = "<group>"; };
 		CE9C751429EA3BB100465B9E /* 54a44053eab293e65fd65f4024732507.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 54a44053eab293e65fd65f4024732507.jpg; sourceTree = "<group>"; };
+		CE9C751629EA483100465B9E /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		EC1BACF729CDEF5200358984 /* SpendWise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpendWise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC1BACFA29CDEF5200358984 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC1BACFC29CDEF5200358984 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				EC1BAD1829CDF2D100358984 /* GraphViewController.swift */,
 				EC1BAD1A29CDF2FD00358984 /* AddViewController.swift */,
 				EC1BAD1D29CDF31300358984 /* ProfileViewController.swift */,
+				CE9C751629EA483100465B9E /* GuideViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			files = (
 				EC1BAD1E29CDF31300358984 /* ProfileViewController.swift in Sources */,
 				EC1BAD1B29CDF2FD00358984 /* AddViewController.swift in Sources */,
+				CE9C751729EA483100465B9E /* GuideViewController.swift in Sources */,
 				EC1BAD2629CE502900358984 /* CollectionViewCell.swift in Sources */,
 				EC1BACFF29CDEF5200358984 /* ViewController.swift in Sources */,
 				EC1BAD1929CDF2D100358984 /* GraphViewController.swift in Sources */,
