@@ -5,6 +5,8 @@
 //  Created by lifan on 2023-04-14.
 //
 
+// Show onboarding tutorial to new users
+
 import UIKit
 
 class GuideViewController: UIViewController {
