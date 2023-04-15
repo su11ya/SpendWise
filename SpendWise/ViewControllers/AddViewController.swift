@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import AVFoundation
 
-class AddViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class AddViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, AVAudioPlayerDelegate {
     
    
 //    let categoryLabel: [String] = ["Cloth", "Groceries", "Gas", "Gym", "Restaurant", "Vacation", "Rent", "Transport", "Gift", "Phone", "Entertainment"]
@@ -38,7 +39,7 @@ class AddViewController: UIViewController, UICollectionViewDelegate, UICollectio
     @IBOutlet weak var navigationBar: UINavigationBar!
     
     let dateFormatter = DateFormatter()
-
+    var soundPlayer : AVAudioPlayer?
 
     func updateType(){
         let type = sgType.selectedSegmentIndex
@@ -141,7 +142,14 @@ class AddViewController: UIViewController, UICollectionViewDelegate, UICollectio
     
 
     @IBAction func okPressed(_ sender: Any) {
-        // Perform action with amount
+        soundPlayer?.volume = 30
+        let soundURL = Bundle.main.path(forResource: "addSound", ofType: "wav")
+        let url = URL(fileURLWithPath: soundURL!)
+        self.soundPlayer = try! AVAudioPlayer.init(contentsOf: url)
+        self.soundPlayer?.currentTime = 0
+        //self.soundPlayer?.numberOfLoops = 1
+        self.soundPlayer?.play()
+        
     }
     
     @IBAction func calanderPressed(_ sender: UIButton) {
