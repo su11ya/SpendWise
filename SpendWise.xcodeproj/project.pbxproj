@@ -7,22 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE9C751329EA3BA500465B9E /* SpendWiseData.db in Resources */ = {isa = PBXBuildFile; fileRef = CE9C751229EA3BA500465B9E /* SpendWiseData.db */; };
+		CE9C751529EA3BB100465B9E /* 54a44053eab293e65fd65f4024732507.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE9C751429EA3BB100465B9E /* 54a44053eab293e65fd65f4024732507.jpg */; };
 		EC1BACFB29CDEF5200358984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1BACFA29CDEF5200358984 /* AppDelegate.swift */; };
 		EC1BACFD29CDEF5200358984 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1BACFC29CDEF5200358984 /* SceneDelegate.swift */; };
 		EC1BACFF29CDEF5200358984 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1BACFE29CDEF5200358984 /* ViewController.swift */; };
 		EC1BAD0229CDEF5200358984 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC1BAD0029CDEF5200358984 /* Main.storyboard */; };
 		EC1BAD0429CDEF5300358984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC1BAD0329CDEF5300358984 /* Assets.xcassets */; };
 		EC1BAD0729CDEF5300358984 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC1BAD0529CDEF5300358984 /* LaunchScreen.storyboard */; };
-		EC1BAD1429CDEFC500358984 /* SpendWiseData.db in Resources */ = {isa = PBXBuildFile; fileRef = EC1BAD1329CDEFC500358984 /* SpendWiseData.db */; };
 		EC1BAD1929CDF2D100358984 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1BAD1829CDF2D100358984 /* GraphViewController.swift */; };
 		EC1BAD1B29CDF2FD00358984 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1BAD1A29CDF2FD00358984 /* AddViewController.swift */; };
 		EC1BAD1E29CDF31300358984 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1BAD1D29CDF31300358984 /* ProfileViewController.swift */; };
 		EC1BAD2029CDF76B00358984 /* TransactionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1BAD1F29CDF76B00358984 /* TransactionData.swift */; };
-		EC1BAD2229CE48F500358984 /* 54a44053eab293e65fd65f4024732507.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC1BAD2129CE48F500358984 /* 54a44053eab293e65fd65f4024732507.jpg */; };
 		EC1BAD2629CE502900358984 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1BAD2529CE502900358984 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE9C751229EA3BA500465B9E /* SpendWiseData.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpendWiseData.db; sourceTree = "<group>"; };
+		CE9C751429EA3BB100465B9E /* 54a44053eab293e65fd65f4024732507.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 54a44053eab293e65fd65f4024732507.jpg; sourceTree = "<group>"; };
 		EC1BACF729CDEF5200358984 /* SpendWise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpendWise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC1BACFA29CDEF5200358984 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC1BACFC29CDEF5200358984 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,14 +33,12 @@
 		EC1BAD0329CDEF5300358984 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC1BAD0629CDEF5300358984 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC1BAD0829CDEF5300358984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC1BAD1329CDEFC500358984 /* SpendWiseData.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = SpendWiseData.db; path = ../../../../SpendWiseData.db; sourceTree = "<group>"; };
 		EC1BAD1629CDEFE000358984 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		EC1BAD1729CDEFE000358984 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		EC1BAD1829CDF2D100358984 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		EC1BAD1A29CDF2FD00358984 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		EC1BAD1D29CDF31300358984 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EC1BAD1F29CDF76B00358984 /* TransactionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionData.swift; sourceTree = "<group>"; };
-		EC1BAD2129CE48F500358984 /* 54a44053eab293e65fd65f4024732507.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 54a44053eab293e65fd65f4024732507.jpg; path = ../../../../Downloads/54a44053eab293e65fd65f4024732507.jpg; sourceTree = "<group>"; };
 		EC1BAD2529CE502900358984 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,7 +117,7 @@
 		EC1BAD1129CDEF7900358984 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				EC1BAD2129CE48F500358984 /* 54a44053eab293e65fd65f4024732507.jpg */,
+				CE9C751429EA3BB100465B9E /* 54a44053eab293e65fd65f4024732507.jpg */,
 				EC1BAD0329CDEF5300358984 /* Assets.xcassets */,
 			);
 			path = Images;
@@ -126,7 +126,7 @@
 		EC1BAD1229CDEF7F00358984 /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				EC1BAD1329CDEFC500358984 /* SpendWiseData.db */,
+				CE9C751229EA3BA500465B9E /* SpendWiseData.db */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -198,8 +198,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC1BAD1429CDEFC500358984 /* SpendWiseData.db in Resources */,
-				EC1BAD2229CE48F500358984 /* 54a44053eab293e65fd65f4024732507.jpg in Resources */,
+				CE9C751329EA3BA500465B9E /* SpendWiseData.db in Resources */,
+				CE9C751529EA3BB100465B9E /* 54a44053eab293e65fd65f4024732507.jpg in Resources */,
 				EC1BAD0729CDEF5300358984 /* LaunchScreen.storyboard in Resources */,
 				EC1BAD0429CDEF5300358984 /* Assets.xcassets in Resources */,
 				EC1BAD0229CDEF5200358984 /* Main.storyboard in Resources */,
