@@ -21,8 +21,7 @@ class TransactionData: NSObject {
     var balance : String?
     
     // Method to initialize the TransactionData object with the provided details
-    func initWithData(theRow i : Int, theDate d : String, theCategory c : String, theAmount a : String,
-                     theType t : String, theDescriptions des : String, theBalance b : String){
+    func initWithData(theRow i : Int, theDate d : String, theCategory c : String, theAmount a : String, theType t : String, theDescriptions des : String, theBalance b : String){
         id = i
         date = d
         category = c
