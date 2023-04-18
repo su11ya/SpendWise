@@ -1,0 +1,53 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "7d56459c7cd4670f18f60f6698e1347230af21ae678f490c43d56bcdf459b231"
+build_start_time: [1681827065, 344891071]
+build_end_time: [1681827076, 767384052]
+inputs:
+  ? "/Users/sophia/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/4b3bdb6b659fad33d49772a1a34661d3/Message/MessageTemp/d293d6e9b68f27ab41421fa45e44bdeb/File/SpendWise/Pods/SwiftAlgorithms/Sources/Algorithms/AdjacentPairs.swift"
+  : [1681670966, 0]
+  ? "/Users/sophia/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/4b3bdb6b659fad33d49772a1a34661d3/Message/MessageTemp/d293d6e9b68f27ab41421fa45e44bdeb/File/SpendWise/Pods/SwiftAlgorithms/Sources/Algorithms/Chain.swift"
+  : [1681670966, 0]
+  ? "/Users/sophia/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/4b3bdb6b659fad33d49772a1a34661d3/Message/MessageTemp/d293d6e9b68f27ab41421fa45e44bdeb/File/SpendWise/Pods/SwiftAlgorithms/Sources/Algorithms/Chunked.swift"
+  : [1681670966, 0]
+  ? "/Users/sophia/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/4b3bdb6b659fad33d49772a1a34661d3/Message/MessageTemp/d293d6e9b68f27ab41421fa45e44bdeb/File/SpendWise/Pods/SwiftAlgorithms/Sources/Algorithms/Combinations.swift"
+  : [1681670966, 0]
+  ? "/Users/sophia/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/4b3bdb6b659fad33d49772a1a34661d3/Message/MessageTemp/d293d6e9b68f27ab41421fa45e44bdeb/File/SpendWise/Pods/SwiftAlgorithms/Sources/Algorithms/Compacted.swift"
+  : [1681670966, 0]
+  ? "/Users/sophia/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/4b3bdb6b659fad33d49772a1a34661d3/Message/MessageTemp/d293d6e9b68f27ab41421fa45e44bdeb/File/SpendWise/Pods/SwiftAlgorithms/Sources/Algorithms/Cycle.swift"
+  : [1681670966, 0]
+  ? "/Users/sophia/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/4b3bdb6b659fad33d49772a1a34661d3/Message/MessageTemp/d293d6e9b68f27ab41421fa45e44bdeb/File/SpendWise/Pods/SwiftAlgorithms/Sources/Algorithms/EitherSequence.swift"
+  : [1681670966, 0]
+  ? "/Users/sophia/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/4b3bdb6b659fad33d49772a1a34661d3/Message/MessageTemp/d293d6e9b68f27ab41421fa45e44bdeb/File/SpendWise/Pods/SwiftAlgorithms/Sources/Algorithms/FirstNonNil.swift"
+  : [1681670966, 0]
+  ? "/Users/sophia/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/4b3bdb6b659fad33d49772a1a34661d3/Message/MessageTemp/d293d6e9b68f27ab41421fa45e44bdeb/File/SpendWise/Pods/SwiftAlgorithms/Sources/Algorithms/FlattenCollection.swift"
+  : [1681670966, 0]
+  ? "/Users/sophia/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/4b3bdb6b659fad33d49772a1a34661d3/Message/MessageTemp/d293d6e9b68f27ab41421fa45e44bdeb/File/SpendWise/Pods/SwiftAlgorithms/Sources/Algorithms/Indexed.swift"
+  : [1681670966, 0]
+  ? "/Users/sophia/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/4b3bdb6b659fad33d49772a1a34661d3/Message/MessageTemp/d293d6e9b68f27ab41421fa45e44bdeb/File/SpendWise/Pods/SwiftAlgorithms/Sources/Algorithms/Intersperse.swift"
+  : [1681670966, 0]
+  ? "/Users/sophia/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/4b3bdb6b659fad33d49772a1a34661d3/Message/MessageTemp/d293d6e9b68f27ab41421fa45e44bdeb/File/SpendWise/Pods/SwiftAlgorithms/Sources/Algorithms/Joined.swift"
+  : [1681670966, 0]
+  ? "/Users/sophia/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/4b3bdb6b659fad33d49772a1a34661d3/Message/MessageTemp/d293d6e9b68f27ab41421fa45e44bdeb/File/SpendWise/Pods/SwiftAlgorithms/Sources/Algorithms/MinMax.swift"
+  : [1681670966, 0]
+  ? "/Users/sophia/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/4b3bdb6b659fad33d49772a1a34661d3/Message/MessageTemp/d293d6e9b68f27ab41421fa45e44bdeb/File/SpendWise/Pods/SwiftAlgorithms/Sources/Algorithms/Partition.swift"
+  : [1681670966, 0]
+  ? "/Users/sophia/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/4b3bdb6b659fad33d49772a1a34661d3/Message/MessageTemp/d293d6e9b68f27ab41421fa45e44bdeb/File/SpendWise/Pods/SwiftAlgorithms/Sources/Algorithms/Permutations.swift"
+  : [1681670966, 0]
+  ? "/Users/sophia/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/4b3bdb6b659fad33d49772a1a34661d3/Message/MessageTemp/d293d6e9b68f27ab41421fa45e44bdeb/File/SpendWise/Pods/SwiftAlgorithms/Sources/Algorithms/Product.swift"
+  : [1681670966, 0]
+  ? "/Users/sophia/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/4b3bdb6b659fad33d49772a1a34661d3/Message/MessageTemp/d293d6e9b68f27ab41421fa45e44bdeb/File/SpendWise/Pods/SwiftAlgorithms/Sources/Algorithms/Reductions.swift"
+  : [1681670966, 0]
+  ? "/Users/sophia/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/4b3bdb6b659fad33d49772a1a34661d3/Message/MessageTemp/d293d6e9b68f27ab41421fa45e44bdeb/File/SpendWise/Pods/SwiftAlgorithms/Sources/Algorithms/Rotate.swift"
+  : [1681670966, 0]
+  ? "/Users/sophia/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/4b3bdb6b659fad33d49772a1a34661d3/Message/MessageTemp/d293d6e9b68f27ab41421fa45e44bdeb/File/SpendWise/Pods/SwiftAlgorithms/Sources/Algorithms/Split.swift"
+  : [1681670966, 0]
+  ? "/Users/sophia/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/4b3bdb6b659fad33d49772a1a34661d3/Message/MessageTemp/d293d6e9b68f27ab41421fa45e44bdeb/File/SpendWise/Pods/SwiftAlgorithms/Sources/Algorithms/Stride.swift"
+  : [1681670966, 0]
+  ? "/Users/sophia/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/4b3bdb6b659fad33d49772a1a34661d3/Message/MessageTemp/d293d6e9b68f27ab41421fa45e44bdeb/File/SpendWise/Pods/SwiftAlgorithms/Sources/Algorithms/Suffix.swift"
+  : [1681670966, 0]
+  ? "/Users/sophia/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/4b3bdb6b659fad33d49772a1a34661d3/Message/MessageTemp/d293d6e9b68f27ab41421fa45e44bdeb/File/SpendWise/Pods/SwiftAlgorithms/Sources/Algorithms/Trim.swift"
+  : [1681670966, 0]
+  ? "/Users/sophia/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/4b3bdb6b659fad33d49772a1a34661d3/Message/MessageTemp/d293d6e9b68f27ab41421fa45e44bdeb/File/SpendWise/Pods/SwiftAlgorithms/Sources/Algorithms/Unique.swift"
+  : [1681670966, 0]
+  ? "/Users/sophia/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/4b3bdb6b659fad33d49772a1a34661d3/Message/MessageTemp/d293d6e9b68f27ab41421fa45e44bdeb/File/SpendWise/Pods/SwiftAlgorithms/Sources/Algorithms/Windows.swift"
+  : [1681670966, 0]
