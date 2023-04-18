@@ -11,6 +11,7 @@
 		EC029DA129EB5A8C00C14297 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC029DA029EB5A8C00C14297 /* AVFoundation.framework */; };
 		EC029DA329EB5AA000C14297 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC029DA229EB5A9F00C14297 /* QuartzCore.framework */; };
 		EC029DA529EB61AF00C14297 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC029DA429EB61AF00C14297 /* EditViewController.swift */; };
+		EC029DA729EEDAED00C14297 /* raphael-renter-csae9W8JAsw-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC029DA629EEDAED00C14297 /* raphael-renter-csae9W8JAsw-unsplash.jpg */; };
 		EC1BACFB29CDEF5200358984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1BACFA29CDEF5200358984 /* AppDelegate.swift */; };
 		EC1BACFD29CDEF5200358984 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1BACFC29CDEF5200358984 /* SceneDelegate.swift */; };
 		EC1BACFF29CDEF5200358984 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1BACFE29CDEF5200358984 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 		EC029DA029EB5A8C00C14297 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		EC029DA229EB5A9F00C14297 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EC029DA429EB61AF00C14297 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		EC029DA629EEDAED00C14297 /* raphael-renter-csae9W8JAsw-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "raphael-renter-csae9W8JAsw-unsplash.jpg"; path = "../../../../Downloads/raphael-renter-csae9W8JAsw-unsplash.jpg"; sourceTree = "<group>"; };
 		EC1BACF729CDEF5200358984 /* SpendWise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpendWise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC1BACFA29CDEF5200358984 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC1BACFC29CDEF5200358984 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 		EC1BAD1129CDEF7900358984 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				EC029DA629EEDAED00C14297 /* raphael-renter-csae9W8JAsw-unsplash.jpg */,
 				EC1BAD2129CE48F500358984 /* 54a44053eab293e65fd65f4024732507.jpg */,
 				EC1BAD0329CDEF5300358984 /* Assets.xcassets */,
 			);
@@ -221,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC029D9F29EB59F600C14297 /* addSound.wav in Resources */,
+				EC029DA729EEDAED00C14297 /* raphael-renter-csae9W8JAsw-unsplash.jpg in Resources */,
 				EC1BAD1429CDEFC500358984 /* SpendWiseData.db in Resources */,
 				EC1BAD2229CE48F500358984 /* 54a44053eab293e65fd65f4024732507.jpg in Resources */,
 				EC1BAD0729CDEF5300358984 /* LaunchScreen.storyboard in Resources */,
